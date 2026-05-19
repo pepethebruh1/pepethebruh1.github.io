@@ -1,0 +1,38 @@
+@import "reset.css";
+@import "url(bootstrap-reboot.css";
+
+body {
+    background: url(pattern-web-hexgrid.png);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: right;
+}
+h1,h2 {
+    text-align: right;
+    color: #1e4845;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+p {
+    color: #4f6666;
+}
+.wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+strong {
+    font-family: 'Caveat', "Arial", sans-serif;
+}
+
+article {
+    border: 5px double;
+    border-radius: 40px;
+    border-color: #064440;
+    padding: 20px;
+    margin: 30px;
+}
