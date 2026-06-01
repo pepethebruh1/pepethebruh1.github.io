@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -11,36 +12,45 @@
 		.attribute {
 		    color: #e6550d;
 		}
-	</style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        figure {
+            margin-bottom: 40px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+        </style>
 </head>
 <body>
-
 <h1>Встраиваемый контент</h1>
-	<p>Один из способов добавления содержимого на страницу — это внедрить другую HTML-страницу в текущую. Это делается с помощью встроенного фрейма или элемента <span class="tag">&lt;iframe&gt;</span>. Данный элемент принимает URL другой HTML-страницы в значении атрибута <span class="attribute">src</span>&nbsp;— это вызывает содержимое из внедрённой HTML-страницы для отображения на текущей странице. Значение атрибута <span class="attribute">src</span> может быть URL относительно страницы, где появляется элемент <span class="tag">&lt;iframe&gt;</span> или абсолютным адресом для исключительно внешней страницы.</p><p>Многие страницы используют элемент <span class="tag">&lt;iframe&gt;</span> для внедрения медиа-контента на страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
+<p>Один из способов добавления содержимого на страницу — это внедрить другую HTML-страницу в текущую. Это делается с помощью встроенного фрейма или элемента <span class="tag">&lt;iframe&gt;</span>. Данный элемент принимает URL другой HTML-страницы в значении атрибута <span class="attribute">src</span>&nbsp;— это вызывает содержимое из внедрённой HTML-страницы для отображения на текущей странице. Значение атрибута <span class="attribute">src</span> может быть URL относительно страницы, где появляется элемент <span class="tag">&lt;iframe&gt;</span> или абсолютным адресом для исключительно внешней страницы.</p><p>Многие страницы используют элемент <span class="tag">&lt;iframe&gt;</span> для внедрения медиа-контента на страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
 
-	<h2>Демонстрация добавления встроенного фрейма</h2>
-		<figure>
-			<iframe src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" allowfullscreen></iframe>
-			<figcaption>Видео от Физико-математический ф-т ОГУ им. И.С. Тургенева</figcaption>
-		</figure> 
-		<figure>
-			<iframe src="https://yandex.ru/map-widget/v1/org/orlovskiy_gosudarstvenny_universitet_imeni_i_s_turgeneva/1030860442/?from=api-maps&ll=36.065507%2C52.951645&utm_source=api-maps&z=16.6" width="560" height="400" allowfullscreen style="position:relative;"></iframe>
-			<figcaption>Орловский государственный университет имени И.С.Тургенева на карте</figcaption>
-		</figure>
+<h2>Демонстрация добавления встроенного фрейма</h2>
+<h3>Видео с подписью</h3>
+<figure>
+  <iframe src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+  <figcaption>Видео с сайта vkvideo.ru</figcaption>
+</figure>
+<h3>Карта с подписью</h3>
+<figure>
+  <iframe src="https://yandex.ru/map-widget/v1/?ll=36.063909%2C52.951255&mode=search&oid=1030860442&ol=biz&z=17" allowfullscreen></iframe>
+  <figcaption>Карта Яндекса по адресу Орел</figcaption>
+</figure>
+<h3>Демонстрация добавления на страницу видео</h3>
+    <video controls poster="oreluniver.png" width="640" height="360">
+        <source src="https://fedyaevys.ru/html&css/lab2/oreluniver.mp4" type="video/mp4">
+        Ваш браузер не поддерживает элемент video.
+    </video>
 
-
-	<h2>Демонстрация добавления на страницу видео</h2>
-		<figure>
-			<video src="/lab2/oreluniver.mp4" controls width="640" height="360" poster="/lab2/poster.png"></video>
-		</figure>
-
- 	<h2>Демонстрация добавления на страницу аудио</h2>
-		<figure>
-			<audio controls>
-				<source src="/lab2/yuriy-gagarin-poehali.mp3" type="audio/mp3">
-				<source src="/lab2/yuriy-gagarin-poehali.ogg" type="audio/ogg">
-			</audio>
-		</figure>
-
+ <h2>Демонстрация добавления на страницу аудио</h2>
+     <audio controls>
+        <source src="https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.mp3" type="audio/mpeg">
+        <source src="https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает аудиоплеер.
+    </audio>
 </body>
 </html>
